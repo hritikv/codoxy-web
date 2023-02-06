@@ -8,11 +8,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   return (
-    <nav className="w-[100%] bg-white sticky top-0 shadow-lg ">
-      <div className=" m-auto justify-between px-5 md:max-w-7xl md:items-center md:flex md:px-3">
+    <nav className="w-[100%] bg-white fixed top-0 shadow-lg z-10">
+      <div className="container m-auto justify-between  md:max-w-7xl md:items-center md:flex md:px-3">
         <div className="flex items-center justify-between py-3 md:py-4 md:block">
-          <a className="flex font-bold items-center text-gray-900 mb-4 md:mb-0">
-           <img src={"/logo1.png"} alt="no logo" />
+          <a className=" items-center  mb-4 md:mb-0 ">
+           <img src={"/logo1.png"} alt="no logo"  className=' '/>
             
           </a>
           <div className="md:hidden">
@@ -34,7 +34,7 @@ const Navbar = () => {
             <ul className=" items-center  space-y-3 md:flex md:space-x-2 md:space-y-0">
               <li className="lg:text-lg md:text-sm font-semibold text-gray-600 ">
                 <Link
-                  href="/home"
+                  href="/HeroSection"
                   className=" hover:text-sky-900 border-2 px-4 py-2 rounded-full  border-transparent hover:border-sky-900 hover:shadow-xl "
                 >
                   Home
@@ -42,7 +42,7 @@ const Navbar = () => {
               </li>
               <li className="lg:text-lg md:text-sm font-semibold text-gray-600 ">
                 <Link
-                  href="/about"
+                  href="/About"
                   className=" hover:text-sky-900 border-2 px-4 py-2 rounded-full  border-transparent hover:border-sky-900 hover:shadow-xl"
                 >
                   About Us
