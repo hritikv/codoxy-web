@@ -42,7 +42,7 @@ const Navbar = () => {
               </li>
               <li className="lg:text-lg md:text-sm font-semibold text-gray-600 ">
                 <Link
-                  href="/About"
+                  href="/about"
                   className=" hover:text-sky-900 border-2 px-4 py-2 rounded-full  border-transparent hover:border-sky-900 hover:shadow-xl"
                 >
                   About Us
@@ -50,7 +50,7 @@ const Navbar = () => {
               </li>
               <li className="lg:text-lg md:text-sm font-semibold text-gray-600 ">
                 <Link
-                  href=""
+                  href="/services"
                   className=" hover:text-sky-900 border-2 px-4 py-2 rounded-full  border-transparent hover:border-sky-900 hover:shadow-xl"
                 >
                   Services
@@ -58,7 +58,7 @@ const Navbar = () => {
               </li>
               <li className="lg:text-lg md:text-sm font-semibold text-gray-600 ">
                 <Link
-                  href=""
+                  href="/clients"
                   className=" hover:text-sky-900 border-2 px-4 py-2 rounded-full  border-transparent hover:border-sky-900 hover:shadow-xl"
                 >
                   Clients
@@ -66,7 +66,7 @@ const Navbar = () => {
               </li>
               <li className="lg:text-lg md:text-sm font-semibold text-gray-600 ">
                 <Link
-                  href=""
+                  href="/contact"
                   className=" hover:text-sky-900 border-2 px-4 py-2 rounded-full  border-transparent hover:border-sky-900 hover:shadow-xl"
                 >
                   Contact Us

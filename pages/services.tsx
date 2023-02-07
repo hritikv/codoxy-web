@@ -34,7 +34,7 @@ const services = () => {
           </div>
           <div className="flex flex-wrap -m-4 ">
             <div className="xl:w-1/4 md:w-1/2 p-2 shadow-lg">
-              <div className="bg-gray-100 p-6 rounded-lg">
+              <div className="bg-gray-100 p-6 rounded-lg">  
                 <img
                   className="h-18 rounded-full w-1/4 mx-auto  object-cover object-center mb-6"
                   src="/images/ror.png"
