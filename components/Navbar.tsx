@@ -6,8 +6,13 @@ import MenuIcon from '@mui/icons-material/Menu';
 // import logo from '../images/logos/logo1.png'
 
 const Navbar = () => {
+  const [Dropdown, setDropdown] = useState<Boolean>(true);
+  const handleDropdown = () => {
+    setDropdown(!Dropdown);
+  };
   const [navbar, setNavbar] = useState(false);
   return (
+    <>
     <nav className="w-[100%] bg-white fixed top-0 shadow-lg z-10">
       <div className="container m-auto justify-between  md:max-w-7xl md:items-center md:flex md:px-3">
         <div className="flex items-center justify-between py-3 md:py-4 md:block">
@@ -52,10 +57,30 @@ const Navbar = () => {
                 <Link
                   href="/services"
                   className=" hover:text-sky-900 border-2 px-4 py-2 rounded-full  border-transparent hover:border-sky-900 hover:shadow-xl"
-                >
-                  Services
+                  onMouseLeave={handleDropdown} onMouseOver={handleDropdown}>
+         Services
                 </Link>
               </li>
+              {!Dropdown&&<div className='fixed top-[90px] right-[655px]  text-blue-300 w-36  border-none p-5 bg-black bg-opacity-60 
+              '>
+              <ul >
+                <li>
+                  <Link href="/" >ROR</Link>
+                </li>
+                <li>
+                  <Link href="/" >PHP</Link>
+                </li>
+                <li>
+                  <Link href="/" >Angular js</Link>
+                </li>
+                <li>
+                  <Link href="/" >React Native</Link>
+                </li>
+                <li>
+                  <Link href="/" >BlockChain</Link>
+                </li>
+              </ul>
+              </div>}
               <li className="lg:text-lg md:text-sm font-semibold text-gray-600 ">
                 <Link
                   href="/clients"
@@ -74,11 +99,11 @@ const Navbar = () => {
               </li>
               <li className="lg:text-lg md:text-sm  font-semibold text-gray-600 ">
                 <Link
-                  href=""
+                  href="/brochure"
                   className="hover:text-sky-900 border-2 px-4 py-2 rounded-full  border-transparent hover:border-sky-900 hover:shadow-xl"
                 >
                   {" "}
-                  Brochures
+                  Portfolio
                 </Link>
               </li>
             </ul>
@@ -86,7 +111,15 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+            
+              </>
   );
 }
 
 export default Navbar
+
+
+
+
+
+

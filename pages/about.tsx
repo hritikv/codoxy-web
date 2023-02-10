@@ -9,7 +9,7 @@ const About = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (client >= 12) {
+      if (client >= 20) {
         clearInterval(interval);
         return;
       }
@@ -21,7 +21,7 @@ const About = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (project >= 18) {
+      if (project >= 25) {
         clearInterval(interval);
         return;
       }
@@ -77,7 +77,7 @@ const About = () => {
             <img
               className="object-cover object-center rounded"
               alt="hero"
-              src="/images/about-01.jpg"
+              src="/images/aboutUs2.jpg"
             />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
@@ -121,7 +121,7 @@ const About = () => {
           </div>
           <div className=" w-1/2 md:w-1/4 p-4">
             <p className="text-3xl text-white font-semibold">{hardWorker}</p>
-            <p className="mt-2 text-white">Hard Worker</p>
+            <p className="mt-2 text-white">IT Folks</p>
           </div>
         </div>
       </section>
