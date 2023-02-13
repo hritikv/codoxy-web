@@ -1,6 +1,37 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import styles from '../styles/service.module.css'
 
 const services = () => {
+  const elementRef = useRef(null);
+
+  useEffect(() => {
+    // Check if the element is in the viewport
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <=
+          (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    // On scroll
+    const handleScroll = () => {
+      if (isInViewport(elementRef.current)) {
+        elementRef.current.classList.add("animate");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up event listener on unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div>
       <div className="w-full  border-2 bg-sky-900 text-white text-center py-44">
@@ -33,7 +64,7 @@ const services = () => {
             </p>
           </div>
           <div className="flex flex-wrap -m-4 ">
-            <div className="xl:w-1/4 md:w-1/2 p-2 shadow-lg">
+            <div className="animate-up xl:w-1/4 md:w-1/2 p-2 shadow-lg" ref={elementRef}>
               <div className="bg-gray-100 p-6 rounded-lg">  
                 <img
                   className="h-18 rounded-full w-1/4 mx-auto  object-cover object-center mb-6"

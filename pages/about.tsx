@@ -14,7 +14,7 @@ const About = () => {
         return;
       }
       setCLient(client + 1);
-    }, 10);
+    }, 100);
 
     return () => clearInterval(interval);
   }, [client]);
@@ -26,7 +26,7 @@ const About = () => {
         return;
       }
       setProject(project + 1);
-    }, 10);
+    }, 100);
 
     return () => clearInterval(interval);
   }, [project]);
@@ -38,7 +38,7 @@ const About = () => {
         return;
       }
       setHos(hos + 189);
-    }, 1);
+    }, 10);
 
     return () => clearInterval(interval);
   }, [hos]);
@@ -50,7 +50,7 @@ const About = () => {
         return;
       }
       setHardWorker(hardWorker + 1);
-    }, 10);
+    }, 100);
 
     return () => clearInterval(interval);
   }, [hardWorker]);

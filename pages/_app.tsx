@@ -37,9 +37,9 @@ export default function App({ Component, pageProps }: AppProps) {
           <ArrowUpwardIcon sx={{color:"white"}} />
         </button>
       )}
-    {/* <Navbar/> */}
+    <Navbar/>
       <Component {...pageProps} />
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }
