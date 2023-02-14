@@ -30,7 +30,7 @@ const services = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [elementRef]);
 
   return (
     <div>
@@ -77,7 +77,7 @@ const services = () => {
                 <p className="leading-relaxed text-base mt-4">
                   We have leveraged this technology in most of our web
                   development projects giving our clients the best solutions on
-                  the market. But we’re not the only company using RoR – Airbnb,
+                  the market. But we are not the only company using RoR – Airbnb,
                   GitHub, SlideShare, Dribbble, Bloomberg, CrunchBase, and
                   Shopify used it in their applications.
                 </p>

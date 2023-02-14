@@ -21,7 +21,7 @@ const About = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (project >= 25) {
+      if (project >= 50) {
         clearInterval(interval);
         return;
       }
