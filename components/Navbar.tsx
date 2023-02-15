@@ -6,7 +6,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 // import logo from '../images/logos/logo1.png'
 
 const Navbar = () => {
-  const [Dropdown, setDropdown] = useState<Boolean>(true);
+  const [Dropdown, setDropdown] = useState<Boolean>(false);
   const handleDropdown = () => {
     setDropdown(!Dropdown);
   };
@@ -61,7 +61,7 @@ const Navbar = () => {
          Services
                 </Link>
               </li>
-              {!Dropdown&&<div className='fixed top-[90px] right-[655px]  text-blue-300 w-36  border-none p-5 bg-black bg-opacity-60 
+              {/* {!Dropdown&&<div className='fixed top-[90px] right-[655px]  text-blue-300 w-36  border-none p-5 bg-black bg-opacity-60 
               '>
               <ul >
                 <li>
@@ -80,7 +80,7 @@ const Navbar = () => {
                   <Link href="/" >BlockChain</Link>
                 </li>
               </ul>
-              </div>}
+              </div>} */}
               <li className="lg:text-lg md:text-sm font-semibold text-gray-600 ">
                 <Link
                   href="/clients"
