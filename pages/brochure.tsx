@@ -1,5 +1,6 @@
 import React from "react";
-
+import Portfolio from '@/components/Portfolio'
+import Link from "next/link";
 const brochure = () => {
   return (
     <div className=" ">
@@ -73,12 +74,13 @@ const brochure = () => {
             </div>
           </div>
           <div className="mt-8">
-          <button className=" w-56 text-sm  py-4 border-2 border-gray-300 text-gray-700 font-normal hover:text-white  hover:bg-black rounded">
+          <Link href="/caseStudies" className="px-10 text-sm  py-4 border-2 border-gray-300 text-gray-700 font-normal hover:text-white  hover:bg-black rounded">
               VIEW CASE STUDIES
-            </button>
+            </Link>
             </div>
         </div>
       </section>
+      <Portfolio />
     </div>
   );
 };

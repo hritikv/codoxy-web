@@ -38,7 +38,7 @@ const portfolio = () => {
             <div className="w-1/5 h-1/6   bg-white text-center shadow-lg rounded">
             <img
                 className=" px-10 py-10   object-center w-full "
-                src="/images/aadhar1.png"
+                src="/images/anuvaad.png"
                 alt="blog"
               />
             </div>

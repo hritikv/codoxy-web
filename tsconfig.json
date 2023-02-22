@@ -19,6 +19,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Navbar.tsx", "components/skillProgressBar.js", "pages/services.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Navbar.tsx", "components/skillProgressBar.js", "pages/services.jsx", "pages/case_studies.jsx"],
   "exclude": ["node_modules"]
 }

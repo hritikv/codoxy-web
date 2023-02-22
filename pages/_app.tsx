@@ -67,7 +67,7 @@ export default function App({ Component, pageProps }: AppProps) {
         waitingTime={400}
         onLoaderFinished={() => setProgress(0)}
       />
-    {/* <Navbar/> */}
+    <Navbar/>
       <Component {...pageProps} />
       {showButton && (
         <button
@@ -77,7 +77,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <ArrowUpwardIcon sx={{color:"white"}} />
         </button>
       )}
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }
